@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:ital,wght@1,300&display=swap');
+* {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+
+body {
+    background: rgb(0, 31, 255);
+    background: linear-gradient(90deg, rgba(0, 31, 255, 1) 0%, rgba(255, 0, 0, 1) 100%);
+}
+
+img {
+    background-color: black;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 5%;
+    border-radius: 20px;
+    padding: 15px 15px;
+    box-shadow: 0 0 10px black;
+    width: 75px;
+}
+
+.txt,
+.cnt {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 10px black;
+}
+
+.txt {
+    line-height: 10px;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    animation: txt 1s;
+}
+
+@keyframes txt {
+    0% {
+        line-height: 50px;
+    }
+    100% {
+        line-height: 10px;
+    }
+}
+
+.txt h1 {
+    animation: drsish1 1s;
+    font-weight: 1000;
+    font-size: 50px
+}
+
+@keyframes drsish1 {
+    0% {
+        font-size: 20px;
+    }
+    100% {
+        font-size: 50px;
+    }
+}
+
+.txt h2 {
+    font-weight: 200;
+}
+
+.recm {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.recm p {
+    text-align: center;
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
+    animation-name: recmm;
+    animation-duration: 2s;
+}
+
+@keyframes recmm {
+    0% {
+        color: rgba(0, 0, 0, 0);
+        background-color: transparent;
+    }
+}
+
+.cnt {
+    top: 80%;
+    left: 50%;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.cnt a {
+    color: black;
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+.cnt:hover {
+    padding: 5px 30px;
+    border-radius: 20px;
+}
+
+.cnt a:hover {
+    font-size: 20px;
+}
